@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 2em;
+}
+
+nav ul	{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	width: 70%;
+	margin: 0 auto 5em;
+}
+
+nav li {
+	list-style: none;
+	font-size: 1.5rem;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
