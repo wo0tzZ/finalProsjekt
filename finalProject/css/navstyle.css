@@ -3,10 +3,21 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	padding-top: 120px;
+	font-family: Sans-serif, Verdana;
+}
 
 
 header {
-	padding: 2em;
+	padding: 1em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: black;
+	opacity: 0.85;
+	z-index: 999;
+
 }
 
 nav ul {
@@ -23,18 +34,19 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 label {
 	font-size: 1.25rem;
+	color: white;
 	
 }
 
 .bar {
 	width: 2.5em;
 	height: 5px;
-	background-color: gray;
+	background-color: white;
 	margin: 5px 0;
 }
 
@@ -56,29 +68,39 @@ label {
 }
 
 @media only screen and (min-width: 600px ) {
+	header {
+		position: fixed;
+		z-index: 999;
+		padding: 0;
+		background-color:black;
+		opacity: 0.85;
+	}
 
 	.nav-toggle-label {
 		display: none;
 	}
 	.navbar {
 		display: block;
-	}
 
+	}
 	nav ul	{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0;
+	padding-top: 1em;
 	width: 70%;
-	margin: 0 auto 5em;
+	margin: 0 auto;
+
  	}
+
  	nav li {
  		font-size: 1.5rem;
  	}
 
  	nav a:hover,
 	nav a:focus {
-	background: lightgray;
+	background: white;
+	color: black;
 	padding: 0.25em 0.5em;
 	}
 
