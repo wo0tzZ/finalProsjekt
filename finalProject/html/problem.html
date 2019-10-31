@@ -26,13 +26,47 @@
 	
 
 	<article>
-		<h1>Problem page...</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+		<h1 tabindex="0">Problem</h1>
+		<p tabindex="0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
 
 		<div class="image-container">
-			<img src="https://source.unsplash.com/random" alt="example photo" tabindex="0">
-			<img src="https://source.unsplash.com/random" alt="example photo" tabindex="0">
-			<img src="https://source.unsplash.com/random" alt="example photo" tabindex="0">
+
+			<input type="radio" name="images" id="img1">
+			<input type="radio" name="images" id="img2">
+			<input type="radio" name="images" id="img3">
+
+			<div class="slides" id="first">
+				
+
+				<label for="img3" class="previous" tabindex="1"><</label>
+				<label for="img2" class="next" tabindex="0">></label>
+				<img src="../images/img1.jpg" alt="example photo" tabindex="0">
+			</div>
+
+			<div class="slides" id="second">
+				
+
+				<label for="img1" class="previous" tabindex="0"><</label>
+				
+				<label for="img3" class="next" tabindex="0">></label>
+				<img src="../images/img2.jpg" alt="example photo" tabindex="0">
+			</div>
+
+			<div class="slides" id="third">
+				
+
+				<label for="img2" class="previous" tabindex="0"><</label>
+				
+				<label for="img1" class="next" tabindex="0">></label>
+				<img src="../images/img3.jpg" alt="example photo" tabindex="0">
+			</div>
+
+			<div class="dots-box">
+				<label class="dot" id="dot1" for="img1" tabindex="0">1</label>
+				<label class="dot" id="dot2" for="img2" tabindex="0">2</label>
+				<label class="dot" id="dot3" for="img3" tabindex="0">3</label>
+			</div>
+			
 		</div>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
